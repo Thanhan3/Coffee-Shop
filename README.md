@@ -1,0 +1,1 @@
+This is an app for managing and ordering beverages online for a coffee shop. The app has 2 roles: customers who place beverage orders, and admins who manage the beverage menu, orders, and sales statistics
