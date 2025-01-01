@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">CoffeeShop</string>
+    <string name="text_forgot_password">Quên Mật Khẩu?</string>
+    <string name="text_have_no_account">Bạn chưa có tài khoản?</string>
+    <string name="text_register">Đăng ký</string>
+    <string name="text_login">Đăng Nhập</string>
+    <string name="text_admin">Quản trị viên</string>
+    <string name="text_user">Người dùng</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_category">Thể Loại</string>
+    <string name="text_drink">Đồ Uống</string>
+    <string name="text_order">Đơn Hàng</string>
+    <string name="text_setting">Cài Đặt</string>
+    <string name="text_add_new_category">Thêm thể loại</string>
+    <string name="hint_name">Tên(*)</string>
+    <string name="text_add_new">Thêm Mới</string>
+    <string name="text_drink_name">drink name</string>
+    <string name="text_price">Giá</string>
+    <string name="text_price_before_discount">price_before_discount</string>
+    <string name="text_name">name</string>
+    <string name="text_category_drink">"Thể loại: "</string>
+    <string name="text_outstanding">Nổi bật:</string>
+    <string name="text_outstanding_no">Không</string>
+    <string name="text_add_new_dink">Thêm đồ uống</string>
+    <string name="text_category_hint">Thể loại(*)</string>
+    <string name="hint_description">Mô tả(*)</string>
+    <string name="hint_price">.000vnd</string>
+    <string name="text_edit_category">"Chỉnh sửa thể loại "</string>
+    <string name="text_edit">Chỉnh Sửa</string>
+    <string name="text_edit_dink">Sửa đồ uống</string>
+    <string name="text_topping">Topping</string>
+    <string name="text_topping_with_drink">Đi kèm đồ uống</string>
+    <string name="text_add_new_topping">Thêm topping cho đồ uống</string>
+    <string name="text_home">Trang chủ</string>
+    <string name="text_history">Lịch sử</string>
+    <string name="text_account">Tài khoản</string>
+    <string name="text_sign_up">Đăng kí</string>
+    <string name="discount">Giảm giá</string>
+    <string name="text_add_discount">Thêm mã giảm giá</string>
+    <string name="hint_discount">% giảm giá</string>
+</resources>

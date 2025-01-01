@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "46396017685",
+    "firebase_url": "https://coffeeshopapp-f803a-default-rtdb.firebaseio.com",
+    "project_id": "coffeeshopapp-f803a",
+    "storage_bucket": "coffeeshopapp-f803a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:46396017685:android:9d2ad3889d2096cc5b521c",
+        "android_client_info": {
+          "package_name": "com.example.coffeeshop"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtvgKayglrU4MWSn89m0-HHpXtVWXK4Lc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

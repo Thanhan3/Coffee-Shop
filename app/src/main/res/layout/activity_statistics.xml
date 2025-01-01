@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_change_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ToolbarStyle"
+   >
+
+        <TextView
+            android:id="@+id/text_change_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:gravity="center"
+            android:text="Thống kê doanh thu"
+            android:textAppearance="@style/TextAppearance.Material3.ActionBar.Title"
+            android:textColor="@color/black" />
+    </androidx.appcompat.widget.Toolbar>
+    <!-- Khu vực chọn thời gian -->
+    <LinearLayout
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:paddingTop="@dimen/_16ssp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/btnStartDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Chọn Ngày Bắt Đầu" />
+
+        <Button
+            android:id="@+id/btnEndDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Chọn Ngày Kết Thúc"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+    <!-- Nút lọc đơn hàng -->
+    <Button
+        android:id="@+id/btnFilter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lọc Đơn Hàng"
+        android:layout_marginBottom="@dimen/_16sdp"
+        android:enabled="false" />
+
+    <!-- Tiêu đề danh sách đơn hàng -->
+    <TextView
+        android:id="@+id/tvOrderTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Danh sách đơn hàng"
+        android:textSize="@dimen/_18ssp"
+        android:textStyle="bold"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:visibility="gone" />
+
+    <!-- Danh sách hiển thị đơn hàng -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvOrders"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_complete_order"
+       />
+
+</LinearLayout>

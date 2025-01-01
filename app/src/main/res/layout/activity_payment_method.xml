@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.user.cart.payment.PaymentMethodActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_payment_method"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ToolbarStyle"
+        android:layout_alignParentTop="true"
+        >
+        <TextView
+            android:id="@+id/text_title_payment_method"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:gravity="center"
+            android:text="Phương thức thanh toán"
+            android:textAppearance="@style/TextAppearance.Material3.ActionBar.Title"
+            android:textColor="@color/black" />
+    </androidx.appcompat.widget.Toolbar>
+    <View
+        android:id="@+id/view_payment_method"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_2sdp"
+        android:layout_marginHorizontal="@dimen/_5sdp"
+        android:background="@color/gray"
+        android:layout_below="@id/toolbar_payment_method"
+        />
+    <RelativeLayout
+        android:id="@+id/layout_cod"
+        android:layout_below="@+id/view_payment_method"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/img_wallet"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:src="@drawable/ic_cod"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"/>
+        <TextView
+            android:layout_marginTop="@dimen/_10sdp"
+            android:id="@+id/tv_title_cod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thanh toán bằng tiền mặt"
+            android:layout_alignParentTop="true"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold"
+            android:layout_toEndOf="@id/img_wallet"/>
+        <TextView
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(thanh toán khi nhận hàng)"
+            android:layout_below="@+id/tv_title_cod"
+            android:textSize="@dimen/_15sdp"
+            android:textColor="@color/color_text"
+            android:layout_toEndOf="@id/img_wallet"/>
+
+        <CheckBox
+            android:id="@+id/check_cod"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/_5sdp"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/layout_bank"
+        android:layout_below="@+id/layout_cod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/img_bank"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:src="@drawable/ic_bank"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"/>
+        <TextView
+            android:layout_marginTop="@dimen/_10sdp"
+            android:id="@+id/tv_title_bank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thanh toán chuyển khoản"
+            android:layout_alignParentTop="true"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold"
+            android:layout_toEndOf="@id/img_bank"/>
+        <TextView
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(thanh toán khi nhận hàng)"
+            android:layout_below="@+id/tv_title_bank"
+            android:textSize="@dimen/_15sdp"
+            android:textColor="@color/color_text"
+            android:layout_toEndOf="@id/img_bank"/>
+
+        <CheckBox
+            android:id="@+id/check_bank"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/_5sdp"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

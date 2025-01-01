@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.user.account.ContactActivity">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ToolbarStyle"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/text_title_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:gravity="center"
+            android:text="Liên hệ với chúng tôi"
+            android:textAppearance="@style/TextAppearance.Material3.ActionBar.Title"
+            android:textColor="@color/black" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- Container for contact details -->
+    <LinearLayout
+        android:id="@+id/contact_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar_contact"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:orientation="vertical"
+        android:padding="@dimen/_15sdp">
+
+        <!-- Facebook -->
+        <LinearLayout
+            android:id="@+id/layout_facebook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="@dimen/_20sdp">
+
+            <ImageView
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:src="@drawable/ic_facebook"
+                android:contentDescription="Facebook Icon"
+                android:layout_marginEnd="@dimen/_10sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Facebook: facebook.com/nguyenthanhan"
+                android:textSize="@dimen/_16sdp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <!-- Zalo -->
+        <LinearLayout
+            android:id="@+id/layout_zalo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="@dimen/_20sdp">
+
+            <ImageView
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:src="@drawable/ic_zalo"
+                android:scaleType="centerCrop"
+                android:contentDescription="Zalo Icon"
+                android:layout_marginEnd="@dimen/_10sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Zalo: 0904183684"
+                android:textSize="@dimen/_16ssp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <!-- Phone -->
+        <LinearLayout
+            android:onClick="callPhone"
+            android:id="@+id/layout_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:src="@drawable/ic_contact"
+                android:contentDescription="Phone Icon"
+                android:layout_marginEnd="@dimen/_10sdp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Số điện thoại: 0904193684"
+                android:textSize="@dimen/_16ssp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
